@@ -39,7 +39,6 @@ RUN apt install python${PYTHON_VERSION} python3-pip -y
 RUN pip3 install pyspark
 RUN echo "alias python='python3' \nalias pip='pip3'" >> ~/.bashrc
 
-
 # 5 - Configure pyspark
 RUN echo "export JAVA_HOME=/lib/jvm/java-11-openjdk-amd64" >> ~/.bashrc
 RUN echo "export SPARK_HOME=/usr/lib/spark" >> ~/.bashrc
